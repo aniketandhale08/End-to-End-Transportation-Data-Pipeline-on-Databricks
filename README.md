@@ -51,16 +51,10 @@ A declarative, incrementally-updating pipeline that:
 
 ## 🏗️ Architecture Diagram
 
-```
-Add png here
-```
----
 
-## 7. Architecture Diagram — Enhanced Version
+![Project Architecture](https://github.com/aniketandhale08/End-to-End-Transportation-Data-Pipeline-on-Databricks/blob/main/Screenshots/Architecture.jpg)
 
-### Mermaid Diagram (for GitHub rendering)
-
-Add this to your README — GitHub renders Mermaid natively:
+### Mermaid Diagram
 
 ```mermaid
 flowchart LR
@@ -104,7 +98,7 @@ flowchart LR
 ```
 ---
 
-## 🥇 Medallion Architecture
+## ⚙️Medallion Architecture
 
 ### 🥉 Bronze — Raw Ingestion Layer
 
@@ -115,7 +109,6 @@ flowchart LR
 
 **Properties on all Bronze tables:** CDF enabled, auto-optimize, auto-compact, PERMISSIVE read mode.
 
----
 
 ### 🥈 Silver — Clean & Validated Layer
 
@@ -132,7 +125,6 @@ flowchart LR
 @dp.expect("valid_passenger_rating", "passenger_rating BETWEEN 1 AND 10")
 ```
 
----
 
 ### 🥇 Gold — Analytics-Ready Layer
 
@@ -184,19 +176,17 @@ Declared using `@dp.expect` on the Silver trips staging view:
 | `valid_passenger_rating` | `passenger_rating BETWEEN 1 AND 10` |
 ---
 
-## 📸 Project Screenshots
+## 📸 Project Snaps
 
-| Screenshot | What It Shows |
-|---|---|
-| S3 Bucket | `project-de-transportation-goodcabs-bucket` in AWS us-east-1 |
-| S3 Trips Folder | 153 CSV objects in the trips/ prefix |
-| Pipeline DAG | Full DAG in Databricks: bronze → silver → gold → city views |
-| Gold Catalog | Unity Catalog: `transportation > gold > 11 tables` |
-| Fact Trips Sample | Chandigarh trips with city_name, distance, ratings |
-| Genie AI Query | Average driver rating by city using natural language |
-| Pipeline Config | `start_date: 2025-01-01`, `end_date: 2025-12-31` |
+#### 1. Pipeline DAG- Full DAG in Databricks: bronze → silver → gold → city views
+![Pipeline DAG](https://github.com/aniketandhale08/End-to-End-Transportation-Data-Pipeline-on-Databricks/blob/main/Screenshots/Pipeline.png)
 
----
+#### 2. S3 Bucket- `project-de-transportation-goodcabs-bucket` in AWS us-east-1
+![S3 Bucket](https://github.com/aniketandhale08/End-to-End-Transportation-Data-Pipeline-on-Databricks/blob/main/Screenshots/S3.png)
+
+#### 3. Genie AI Query- Average driver rating by city using natural language
+![Genie AI Query](https://github.com/aniketandhale08/End-to-End-Transportation-Data-Pipeline-on-Databricks/blob/main/Screenshots/Genie.png)
+
 
 ## 📊 Business Insights / Output
 
