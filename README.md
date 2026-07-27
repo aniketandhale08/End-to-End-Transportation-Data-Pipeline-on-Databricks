@@ -188,11 +188,6 @@ Declared using `@dp.expect` on the Silver trips staging view:
 ![Genie AI Query](https://github.com/aniketandhale08/End-to-End-Transportation-Data-Pipeline-on-Databricks/blob/main/Screenshots/Genie.png)
 
 
-## 📊 Business Insights / Output
-
-
----
-
 ## 💡 Key Learnings
 
 - LakeFlow SDP automatically resolves DAG execution order — no manual orchestration code
@@ -203,7 +198,6 @@ Declared using `@dp.expect` on the Silver trips staging view:
 - Unity Catalog enforces catalog.schema.table namespace across the entire workspace
 
 ---
-
 
 ## 🧪 How to Run the Project
 
