@@ -1,4 +1,4 @@
-# 🚖 GoodCabs — End-to-End Data Engineering Pipeline on Databricks
+# GoodCabs — End-to-End Data Engineering Pipeline on Databricks
 
 
 
@@ -237,5 +237,5 @@ Declared using `@dp.expect` on the Silver trips staging view:
 
 **Aniket Andhale**
 
-🔗 [LinkedIn](#) | [GitHub](#)
+🔗 [LinkedIn](https://www.linkedin.com/in/aniketandhale08/)
 
