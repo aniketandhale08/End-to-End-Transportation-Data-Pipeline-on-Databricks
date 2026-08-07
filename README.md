@@ -8,7 +8,7 @@ A **production-style, end-to-end Data Engineering pipeline** built on **Databric
 
 The pipeline ingests raw trip data from **AWS S3**, processes it through a **Medallion Architecture (Bronze → Silver → Gold)** using **LakeFlow Spark Declarative Pipelines**, and delivers clean, city-specific analytical views for business consumption.
 
-> **Data Volume:** 148 daily trip CSV files (~19.5 MB total) + 5 incremental files manually uploaded to S3 to validate trigger-based pipeline execution.
+> **Data Volume:** 148 daily trip CSV files (~19.5 MB total) + 5 incremental files manually uploaded to S3 to validate trigger-based pipeline execution. Total Records Processed: 366143
 
 ---
 
